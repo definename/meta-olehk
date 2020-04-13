@@ -10,6 +10,6 @@ devshell:
 
 `bitbake core-image-olehk -c devshell`
 
-create recipe with recipetool:
+create recipe with recipetool using [git](https://github.com/definename/hello-world-cpp-cmake) sources:
 
 `recipetool create -o hello-world-cpp-cmake.bb -V 1.00 https://github.com/definename/hello-world-cpp-cmake.git`
