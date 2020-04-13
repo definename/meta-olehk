@@ -1,8 +1,14 @@
-build: `bitbake core-image-olehk -c build`
+build:
 
-flash: `sudo dd if=core-image-olehk-raspberrypi3-olehk.rpi-sdimg of=/dev/mmcblk0 bs=1M conv=fsync`
+`bitbake core-image-olehk -c build`
 
-devshell: `bitbake core-image-olehk -c devshell`
+flash:
+
+`sudo dd if=core-image-olehk-raspberrypi3-olehk.rpi-sdimg of=/dev/mmcblk0 bs=1M conv=fsync`
+
+devshell:
+
+`bitbake core-image-olehk -c devshell`
 
 create recipe with recipetool:
 
