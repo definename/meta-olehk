@@ -7,5 +7,6 @@ S = "${WORKDIR}"
 SRC_URI += "file://hello-world-cpp-makefile.tar.gz"
 
 do_install() {
+    # Install binary to usr/bin
     oe_runmake install 'DESTDIR=${D}'
 }
